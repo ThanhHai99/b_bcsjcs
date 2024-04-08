@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start:build2": "webpack --mode production && javascript-obfuscator dist/bundle.js -o dist/bundle.min.js",
+    "build:webpack": "webpack --mode production",
+    "build:encode": "javascript-obfuscator dist/bundle.js -o dist/bundle.min.js",
     "start:prod2": "node dist/bundle.min.js",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
